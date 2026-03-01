@@ -1,0 +1,33 @@
+# Default configuration for glomerular morphology classification
+
+# Training
+epochs: 50
+batch_size: 32
+accumulation_steps: 1
+learning_rate: 1.0e-4
+weight_decay: 0.01
+warmup_epochs: 5
+label_smoothing: 0.0
+early_stopping_patience: 15
+seed: 42
+
+# LDAM (Cao et al. 2019)
+ldam_max_margin: 0.5
+ldam_drw_start: 0.5    # fraction of epochs before DRW kicks in
+
+# HistoRandAugment (Faryna et al. 2021/2024)
+randaugment_n: 2
+randaugment_m: 9
+
+# Two-phase backbone freeze
+freeze_backbone_epochs: 0
+discriminative_lr_enabled: false
+backbone_lr_factor: 0.1
+
+# Paths
+data_dir: "data_split_patient"
+checkpoint_dir: "outputs/checkpoints"
+results_dir: "outputs/results"
+
+# Workers
+num_workers: 4
