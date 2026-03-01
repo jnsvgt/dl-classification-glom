@@ -8,7 +8,7 @@ Deep learning pipeline for classifying morphological patterns in PAS-stained kid
 |---|---------|-------------|
 | 1 | Unauffälliger Glomerulus | Normal glomerulus |
 | 2 | Amyloidose | Amyloidosis |
-| 3 | DM nodulär | Diabetic nephropathy (nodular) |
+| 3 | Noduläre Sklerose | Nodular sclerosis |
 | 4 | Globale Vernarbung | Global sclerosis |
 | 5 | Mesangiale Matrixvermehrung | Mesangial matrix expansion |
 | 6 | MPGN | Membranoproliferative GN |
